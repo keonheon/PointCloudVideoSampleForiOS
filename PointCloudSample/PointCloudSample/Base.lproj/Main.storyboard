@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zaX-XA-ets">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5eZ-k4-DOh">
+            <objects>
+                <viewController id="zaX-XA-ets" customClass="ViewController" customModule="PointCloudSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dSX-Zk-HqY"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGH-9d-PF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="it0-9e-d1r">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preferredRenderingAPI="1" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-d6-HLO">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                            </sceneKitView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-dI-2k5">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-IU-OC1">
+                                <rect key="frame" x="250" y="0.0" width="250" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cfM-IU-OC1" firstAttribute="leading" secondItem="MKI-d6-HLO" secondAttribute="trailing" id="5Ih-ys-nTp"/>
+                            <constraint firstItem="XvB-dI-2k5" firstAttribute="width" secondItem="MKI-d6-HLO" secondAttribute="width" id="5gQ-Qq-7KY"/>
+                            <constraint firstItem="XvB-dI-2k5" firstAttribute="height" secondItem="MKI-d6-HLO" secondAttribute="height" id="9zs-Ge-PZZ"/>
+                            <constraint firstItem="XvB-dI-2k5" firstAttribute="leading" secondItem="it0-9e-d1r" secondAttribute="leading" id="OEF-qh-zFY"/>
+                            <constraint firstItem="MKI-d6-HLO" firstAttribute="top" secondItem="dSX-Zk-HqY" secondAttribute="bottom" id="P9u-em-eME"/>
+                            <constraint firstItem="XvB-dI-2k5" firstAttribute="top" secondItem="dSX-Zk-HqY" secondAttribute="bottom" id="aBY-e9-u2y"/>
+                            <constraint firstItem="cfM-IU-OC1" firstAttribute="top" secondItem="dSX-Zk-HqY" secondAttribute="bottom" id="btK-MA-ynZ"/>
+                            <constraint firstItem="MKI-d6-HLO" firstAttribute="height" secondItem="it0-9e-d1r" secondAttribute="height" id="clh-V3-IJk"/>
+                            <constraint firstAttribute="trailing" secondItem="cfM-IU-OC1" secondAttribute="trailing" id="fCV-YO-1ID"/>
+                            <constraint firstItem="cfM-IU-OC1" firstAttribute="height" secondItem="MKI-d6-HLO" secondAttribute="height" id="qec-x4-N0A"/>
+                            <constraint firstItem="cfM-IU-OC1" firstAttribute="width" secondItem="MKI-d6-HLO" secondAttribute="width" id="tfW-df-Anl"/>
+                            <constraint firstItem="cfM-IU-OC1" firstAttribute="leading" secondItem="XvB-dI-2k5" secondAttribute="trailing" id="vLc-SX-rqb"/>
+                            <constraint firstItem="MKI-d6-HLO" firstAttribute="leading" secondItem="it0-9e-d1r" secondAttribute="leading" id="vr3-lr-qRb"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="500" height="300"/>
+                    <connections>
+                        <outlet property="leftImageView" destination="XvB-dI-2k5" id="VHg-F7-B7z"/>
+                        <outlet property="rightImageView" destination="cfM-IU-OC1" id="X14-sC-K8O"/>
+                        <outlet property="sceneView" destination="MKI-d6-HLO" id="1Cc-SO-rdL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNN-bP-1FQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192" y="-97"/>
+        </scene>
+    </scenes>
+</document>
